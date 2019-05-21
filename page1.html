@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Homepage1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    </head>
+
+
+    <script type="text/javascript">
+           function calc(op)
+           {
+             var  a=parseInt(document.getElementById("text1").value,10);
+             var b=parseInt(document.getElementById("text2").value,10);
+
+             try{
+                 
+                if(op=='+')document.getElementById("Lab1").innerHTML="Result of addition is "+String(a+b);
+             else if(op=='-')document.getElementById("Lab1").innerHTML="Result of subtraction is "+String(a-b);
+             else if(op=='*')document.getElementById("Lab1").innerHTML="Result of multiplication is "+String(a*b);
+             else if(op=='/')document.getElementById("Lab1").innerHTML="Result of Division is "+String(a/b);
+             else if(op=='%')document.getElementById("Lab1").innerHTML="Result of Mod operator is "+String(a%b);
+           
+             }
+             catch(Exception)
+             {
+                   window.alert(Exception); 
+             }
+           
+           
+           }
+           
+
+    </script>
+    <body>
+ 
+
+    <center>  
+     <div class="container" style="padding-top: 50px">     
+     <div style="padding-bottom: 20px" class="container">   
+        <input id="text1" type="text" placeholder="First number!" />
+        <br><br>
+        <input id="text2" type="text" placeholder="Second number!">
+        <br><br>
+        <label id="Lab1"></label>
+    </div>   
+        <br>
+        <br>
+
+    <div class="row">
+
+      <B> <button id ="Perform" type="button" onclick="calc('+')" >+</button>
+        <button id ="Perform" type="button"  onclick="calc('-')" >-</button>
+        <button id ="Perform" type="button"  onclick="calc('*')" >*</button>
+        <button id ="Perform" type="button"  onclick="calc('/')" >/</button>
+        <button id ="Perform" type="button"  onclick="calc('%')" >%</button>
+      </B>
+    </div> 
+    </div>
+ </center>
+   
+</body>
+
+</html>
