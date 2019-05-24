@@ -1,0 +1,13 @@
+marquee{
+    color:indigo;
+    width: 500px;
+    background-color: yellow;
+    font-size: 30px;
+    
+    
+}
+
+div#BOX
+{
+    width: 200px;height: 200px;border: 3px solid black;padding-top: 20px;background-color: orange;
+}

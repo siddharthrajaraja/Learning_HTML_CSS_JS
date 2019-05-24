@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head><title>Homepage1</title>
+      <link href="page1.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
-
     <script type="text/javascript">
            function calc(op)
            {
@@ -14,8 +13,7 @@
 
              try{
                  
-                if(op=='+')
-                  document.getElementById("Lab1").innerHTML="Result of addition is "+String(a+b);
+             if(op=='+')document.getElementById("Lab1").innerHTML="Result of addition is "+String(a+b);
              else if(op=='-')document.getElementById("Lab1").innerHTML="Result of subtraction is "+String(a-b);
              else if(op=='*')document.getElementById("Lab1").innerHTML="Result of multiplication is "+String(a*b);
              else if(op=='/')document.getElementById("Lab1").innerHTML="Result of Division is "+String(a/b);
@@ -29,18 +27,14 @@
            
            
            }
-           
-
     </script>
     <body>
- 
-
     <center> 
     <div class ="content"> 
-      <marquee bgcolor="yellow" direction="right" scrolldelay=0.5 scrollamount=3 height="20px" width="200px">SCIENTIFIC CALCULATOR</marquee>
+      <marquee scrolldelay=0.1 scrollamount=15>SCIENTIFIC CALCULATOR</marquee>
       </div>
     <br>
-      <div style="width: 200px;height: 200px;border: 1px solid red;padding-top: 20px; background-color: orange;" >  
+      <div id="BOX"  >  
      <div class="container">     
      <div  class="container">   
         <input id="text1" type="text" placeholder="First number!" />
@@ -63,9 +57,7 @@
     </div> 
     </div>
     </div>
-    
- </center>
-   
+  </center>
  
 </body>
 
