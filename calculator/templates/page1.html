@@ -1,0 +1,36 @@
+{% extends 'blockcontentpage.html'%}
+
+{% block content%}
+      <div class="centered"> 
+    <div class ="content"> 
+      <marquee id="one" scrolldelay=0.1 scrollamount=15>ARITHEMATIC-SCIENTIFIC CALCULATOR</marquee>
+      </div>
+    <br>
+    <center>
+      <div id="BOX"  >  
+     <div class="container">     
+     <div  class="container">   
+        <input id="text1" type="text" placeholder="First number!" />
+        <br><br>
+        <input id="text2" type="text" placeholder="Second number!"/>
+        <br><br>
+        <label id="Lab1" style="height: 50px; width:60px;"></label>
+    </div>   
+        <br>
+        <br>
+
+    <div class="row">
+        <fieldset><legend>ARITHEMATIC-OPERATIONS</legend>
+        <button id ="Perform" type="button" onclick="calc('+')" >+</button>
+        <button id ="Perform" type="button"  onclick="calc('-')" >-</button>
+        <button id ="Perform" type="button"  onclick="calc('*')" >*</button>
+        <button id ="Perform" type="button"  onclick="calc('/')" >/</button>
+        <button id ="Perform" type="button"  onclick="calc('%')" >%</button>
+         </fieldset>   
+      
+    </div> 
+    </div>
+    </div>
+    </center>
+      </div>
+ {% endblock %}     
