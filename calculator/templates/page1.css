@@ -1,3 +1,4 @@
+
 marquee#one{
     color:indigo;
     width: 500px;
@@ -8,11 +9,9 @@ marquee#one{
     
 }
 
-
-
 div#BOX
 {
-    width: 220px;height: 250px;border: 3px solid black;padding-top: 50px;background-color: orange;margin-top: 50px;
+    width: 220px;height: 250px;border: 3px solid black;padding-top: 50px;background-color: orange;
 
 }
 
@@ -24,7 +23,33 @@ div.content{
 fieldset legend{
   font-size: 20px;
   margin-left: 20px;margin-right: 20px;
-  background-color: blueviolet;
+  background-color: yellow;
 
 }
+
+.grid-container
+{
+    
+    display: inline-grid;
+    grid-template-columns:auto auto;
+    padding: 20px;
+    align-content: center;
+    grid-column-gap: 60px;
+     
+}
+
+
+.grid-item > button, button#add,button#sub,button#mul,button#div,button#mod
+{
+    border: 0.5px solid gray;
+    border-radius: 15px;
+    fill: dimgrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+    cursor: pointer; 
+    text-align: center;   
+
+}
+
 

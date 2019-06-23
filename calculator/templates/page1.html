@@ -1,10 +1,23 @@
 {% extends 'blockcontentpage.html'%}
 
 {% block content%}
-      <div class="centered"> 
+  
+  
     <div class ="content"> 
       <marquee id="one" scrolldelay=0.1 scrollamount=15>ARITHEMATIC-SCIENTIFIC CALCULATOR</marquee>
       </div>
+    <br>
+  <center>  
+    <fieldset style="width: 60px;"> 
+      <strong> <i> <legend style="width:relative; font-family:'Courier New', Courier, monospace;">Select Modes!!</legend></i> </strong>
+    
+    <div class="grid-container">
+      <div class="grid-item"><button name="ARITHEMATIC" id="Arithematic">Arithematic</button></div>
+      <div class="grid-item"><button name="SCIENTIFIC" id="Scientific">Scientific</button></div>
+    </div>
+  </fieldset>
+    
+  </center>  
     <br>
     <center>
       <div id="BOX"  >  
@@ -21,16 +34,17 @@
 
     <div class="row">
         <fieldset><legend>ARITHEMATIC-OPERATIONS</legend>
-        <button id ="Perform" type="button" onclick="calc('+')" >+</button>
-        <button id ="Perform" type="button"  onclick="calc('-')" >-</button>
-        <button id ="Perform" type="button"  onclick="calc('*')" >*</button>
-        <button id ="Perform" type="button"  onclick="calc('/')" >/</button>
-        <button id ="Perform" type="button"  onclick="calc('%')" >%</button>
+        <button id ="add" type="button" onclick="calc('+')"  >+</button>
+        <button id ="sub" type="button"  onclick="calc('-')" >-</button>
+        <button id ="mul" type="button"  onclick="calc('*')" >*</button>
+        <button id ="div" type="button"  onclick="calc('/')" >/</button>
+        <button id ="mod" type="button"  onclick="calc('%')" >%</button>
          </fieldset>   
       
     </div> 
     </div>
     </div>
     </center>
-      </div>
+      
+
  {% endblock %}     
