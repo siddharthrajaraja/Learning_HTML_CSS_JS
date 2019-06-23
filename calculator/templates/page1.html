@@ -3,7 +3,7 @@
 {% block content%}
   
   
-    <div class ="content"> 
+    <div class ="content" align ="center"> 
       <marquee id="one" scrolldelay=0.1 scrollamount=15>ARITHEMATIC-SCIENTIFIC CALCULATOR</marquee>
       </div>
     <br>
@@ -12,15 +12,15 @@
       <strong> <i> <legend style="width:relative; font-family:'Courier New', Courier, monospace;">Select Modes!!</legend></i> </strong>
     
     <div class="grid-container">
-      <div class="grid-item"><button name="ARITHEMATIC" id="Arithematic">Arithematic</button></div>
-      <div class="grid-item"><button name="SCIENTIFIC" id="Scientific">Scientific</button></div>
+      <div class="grid-item"><button name="ARITHEMATIC" id="Arithematic" type="button" onclick="choice('ARITHEMATIC')">Arithematic</button></div>
+      <div class="grid-item"><button name="SCIENTIFIC" id="Scientific" type="button" onclick="choice('SCIENTIFIC')" >Scientific</button></div>
     </div>
   </fieldset>
     
   </center>  
     <br>
     <center>
-      <div id="BOX"  >  
+      <div id="ABOX"  hidden>  
      <div class="container">     
      <div  class="container">   
         <input id="text1" type="text" placeholder="First number!" />
@@ -46,5 +46,6 @@
     </div>
     </center>
       
+
 
  {% endblock %}     

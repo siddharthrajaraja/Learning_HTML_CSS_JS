@@ -1,4 +1,3 @@
-
 function calc(op)
            {
              var  a=parseFloat(document.getElementById("text1").value,10);
@@ -26,3 +25,4 @@ function calc(op)
            
            
            }
+      

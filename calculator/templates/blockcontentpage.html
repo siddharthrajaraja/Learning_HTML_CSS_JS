@@ -10,9 +10,36 @@
     <script type="text/javascript" src="{% static 'page1.js' %}"></script>
 
 </head>
-<body background="{% static 'fox.jpg'%}" > 
+<body background="{% static 'fox.jpg'%}" style="background-size: 50%;" > 
     {% block content %}
     {% endblock %}
 
+    <br> 
+ <center>   <footer  style="background-color: purple;width:60%;">
+        <div align="center">
+            <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color:yellow;"><U><I>Developed By:</I></U> </h1>
+            <h2 style="font-family: cursive;color:cyan;"><strong>SIDDHARTH RAJA</strong></h2>
+        </div>
+
+    </footer>
+  </center>  
+
+
+  <script>
+        function choice(ch)
+        {
+          if(ch=="ARITHEMATIC")
+          {     let ele=document.getElementById('ABOX');  
+                window.alert("ARITHEMATIC MODE ON!!");
+                console.log(ele);
+                ele.removeAttribute('hidden');
+          }
+          else if (ch=="SCIENTIFIC")
+          {
+            window.alert("SCIENTIFIC MODE ON!!");
+          }
+        }
+  
+  </script>
 </body>
 </html>
